@@ -10,9 +10,9 @@ connectDB();
 // init middleware
 app.use(express.json({ extended: false }));
 
-app.get("/", (req, res) =>
-  res.json({ msg: "Welcome to the conact keeper api" })
-);
+// app.get("/", (req, res) =>
+//   res.json({ msg: "Welcome to the conact keeper api" })
+// );
 
 // define routes
 app.use("/api/users", require("./routes/users"));
